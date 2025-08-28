@@ -1,0 +1,24 @@
+# character-id-1.graphql
+
+query GetCharacterById {
+    character(id: 1) {
+        id
+        name
+        status
+        species
+        type
+        gender
+        origin {
+            name
+        }
+        location {
+            name
+        }
+        image
+        episode {
+            id
+            name
+            episode
+        }
+    }
+}
