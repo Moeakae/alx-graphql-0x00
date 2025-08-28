@@ -1,0 +1,26 @@
+# characters-page-3.graphql
+
+query GetCharactersPage3 {
+    characters(page: 3) {
+        results {
+            id
+            name
+            status
+            species
+            gender
+            origin {
+                name
+            }
+            location {
+                name
+            }
+            image
+        }
+        info {
+            count
+            pages
+            next
+            prev
+        }
+    }
+}
