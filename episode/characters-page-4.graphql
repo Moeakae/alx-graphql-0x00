@@ -1,0 +1,20 @@
+# /c:/Users/novo_/OneDrive/Desktop/alx-graphql-0x00/episode/characters-page-2.graphql
+
+query GetCharactersPage2 {
+    characters(page: 2) {
+        results {
+            id
+            name
+            status
+            species
+            gender
+            image
+        }
+        info {
+            count
+            pages
+            next
+            prev
+        }
+    }
+}
